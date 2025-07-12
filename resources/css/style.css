@@ -1,4 +1,158 @@
 /* Universal Styles */
 html {
     font-size: 16px;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700; 
+}
+h1 {
+    font-size: 2.5rem;
+    margin: 2rem 1rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1.5rem 1rem;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 0.5rem 1rem;
+    opacity: 0.5;
+}
+
+/* Header Section */
+
+header {
+    max-height: 4rem;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    margin: 0 auto;
+}
+
+ul.HeaderIcons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+}
+
+
+header nav .icon {
+    width: 2rem;
+    height: auto;
+    display: block;
+}
+
+/* Main Section */
+.StartHere {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgray;
+    padding-bottom: 2rem;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+.StartHere .content {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    justify-content: center;
+}
+
+.StartHere .button {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2rem;
+    margin: 2rem 1rem;
+}
+.StartHere .button p {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    margin: 0;
+    color: white;
+}
+.StartHere .button:hover {
+    background-color: darkgray;
+}
+
+div.Banner {
+  width: 100%;
+  height: auto;
+}
+
+div.Banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Hero {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    background-color: rgb(240, 240, 240);
+}
+
+.Hero article {
+    width: 100%;
+    max-width: 50rem;
+    margin: 1rem auto;
+    text-align: left;
+}
+.Hero h2,
+.Hero p {
+    margin: 0.5rem 1rem;
+}
+.Hero p, 
+.Hero a {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: 100;
+}
+.Hero article img {
+    width: 95%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+.Hero a {
+    text-decoration: none;
+    color: rgb(83, 114, 255);
+    margin: 0.5rem 1rem;
+    font-weight: bold;
+}
+
+/* Media Queries */
+/* Mobile Styles */
+@media only screen and (max-width:780px) {
+    .Hero .item1,
+    .item2-desktop,
+    .item3-desktop,
+    .item4-desktop {
+        display: none;
+    }
 }

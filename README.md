@@ -18,14 +18,17 @@ This project is a responsive website for Colmar Academy, built as a capstone for
 
 ## File Structure
 
+```text
 colmar-academy/
 ├── resources/
-| |──videos/
-| |──images/
-| └──css/  
+│   ├── videos/
+│   └── images/
+├── css/
 │   └── style.css
 ├── index.html
 └── README.md
+```
+
 
 ## How to View
 
