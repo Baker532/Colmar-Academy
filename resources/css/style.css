@@ -73,6 +73,11 @@ a {
   background-color: #314ad6;
 }
 
+.btn--small {
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+}
+
 /* ========== Utility ========== */
 .center-text {
   text-align: center;
@@ -214,6 +219,35 @@ a {
   font-size: 0.875rem;
   color: #777;
   font-style: italic;
+}
+.information__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.info-card {
+  background-color: #eee;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.info-card__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.info-card__content {
+  padding: 1.25rem;
+}
+
+.info-card__text {
+  font-size: 1rem;
+  margin: 0.5rem 0 1.5rem;
+  color: #444;
 }
 
 
