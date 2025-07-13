@@ -1,106 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Colmar Academy</title>
-    <link rel="stylesheet"  type="text/css" href="./resources/css/style.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="manifest" href="site.webmanifest">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Colmar Academy</title>
+
+  <!-- Fonts and Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./resources/css/style.css" />
+  <link rel="icon" href="img/favicon-32x32.png" type="image/png" />
 </head>
-<body>
-    <header>
-        <nav>
-            <ul class="HeaderIcons">
-                <li><a href="./resources/images/"><img src="./resources/images/ic-logo.svg" alt="Colmar Logo - Home" class="icon"></a></li>
-                <li><a href=""><img src="./resources/images/ic-on-campus.svg" alt="on campus" class="icon"></a></li>
-                <li><a href=""><img src="./resources/images/ic-online.svg" alt="online" class="icon"></a></li>
-                <li><a href=""><img src="./resources/images/ic-login.svg" alt="login" class="icon"></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <article class="StartHere">
-            <div class="Banner">
-                <img src="./resources/images/banner.jpg" alt="Colmar Banner">
-            </div>
-               <div class="content">
-                    <h1>Learn something new everyday</h1>
-                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-                    <div class="button"><p>Start Here</p></div>
-                </div>
-            </article>
-            <section class="Hero">
-                <!-- This article is hidden on mobile view -->
-                <article class="item1">
-                    <img src="./resources/images/information-main.jpg" alt="A man reading">
-                    <h2>It doesn't hurt to keep practing</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt, numquam voluptates? Cum, ratione deserunt!  
-                        Ut in molestias aliquam maxime dolore consequatur! Facere rem quaerat, odio sed iusto numquam iste accusamus?<br><br><span id="Emanuel">Emanuel, Sr Strategist at Hiring.com</span></p>
-                </article>
-                <article class="item2">
-                    <img src="./resources/images/information-orientation-mobile.jpg" alt="A school sidewalk">
-                    <h2>Orientation Date</h2>
-                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                    <a href="">Read More</a>
-                </article>
-                <!-- This article is hidden on mobile view -->
-                <article class="item2-desktop">
-                    <img src="./resources/images/information-orientation.jpg" alt="A school sidewalk">
-                    <h2>Orientation Date</h2>
-                    <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
-                    <a href="">Read More</a>
-                </article>
-                <article class="item3">
-                    <img src="./resources/images/information-campus-mobile.jpg" alt="A school interior">
-                    <h2>Our Campus</h2>
-                    <p>Find which campus is close by you</p>
-                    <a href="">Read More</a>
-                </article>
-                <!-- This article is hidden on mobile view -->
-                <article class="item3-desktop">
-                    <img src="./resources/images/information-campus.jpg" alt="A school interior">
-                    <h2>Our Campus</h2>
-                    <p>Find which campus is close by you</p>
-                    <a href="">Read More</a>
-                </article>
-                <article class="item4">
-                    <img src="./resources/images/information-guest-lecture-mobile.jpg" alt="Oliver Sack">
-                    <h2>Special Guest Lecture</h2>
-                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                    <a href="">Read More</a>
-                <!-- This article is hidden from mobile view-->
-                <article class="item4-desktop">
-                    <img src="./resources/images/information-guest-lecture.jpg" alt="Oliver Sack">
-                    <h2>Special Guest Lecture</h2>
-                    <p>Join a keynote with Oliver Sack about music in medical treatment</p>
-                    <a href="">Read More</a>
-                </article>
-            </section>
-            <section class="Learning">
-                <h1>Start Learning</h1>
-                <div class="item 1"><a href="#">Software Engineering</a></div>
-                <div class="item 2"><a href="#">Computer Art</a></div>
-                <div class="item 3"><a href="#">Design</a></div>
-                <div class="item 4"><a href="#">Data</a></div>
-                <div class="item 5"><a href="#">Business</a></div>
-                <div class="item 6"><a href="#">Marketing</a></div>
-            </section>
-            <section class="Thesis">
-                <h1>Thesis Exhibits</h1>
-                <div class="VidContainer">
-                    <video autoplay playsinline controls>
-                        <source src="./resources/videos/thesis.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </section>
-    </main>
-    <footer>
-        <p>©2016 Colmar Academy | Developed by Matt Baker</p>
-    </footer>
+
+<body class="container">
+
+  <!-- ===== Desktop Navigation ===== -->
+  <nav class="nav nav--desktop">
+    <a href="#" class="nav__logo-link">
+      <img src="./resources/images/ic-logo.svg" alt="Colmar logo" class="nav__logo" />
+      <span class="nav__name nav__name--bold">Colmar</span>
+      <span class="nav__name nav__name--thin">Academy</span>
+    </a>
+    <ul class="nav__list">
+      <li class="nav__item"><a href="#" class="nav__link">On campus</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Online</a></li>
+      <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== Mobile Navigation ===== -->
+  <nav class="nav nav--mobile">
+    <a href="#" class="nav__link"><img src="./resources/images/ic-logo.svg" alt="Home" class="nav__mobile-icon" /></a>
+    <a href="#" class="nav__link"><img src="./resources/images/ic-on-campus.svg" alt="On campus" class="nav__mobile-icon" /></a>
+    <a href="#" class="nav__link"><img src="./resources/images/ic-online.svg" alt="Online" class="nav__mobile-icon" /></a>
+    <a href="#" class="nav__link"><img src="./resources/images/ic-login.svg" alt="Login" class="nav__mobile-icon" /></a>
+  </nav>
+
+  <!-- ===== Main Content Area ===== -->
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+        <div class="hero__image"></div>
+          <img src="./resources/images/banner.jpg" alt="Students studying">
+    </div>
+
+    <div class="hero__content">
+      <h1 class="heading-1">Learn something new every day</h1>
+      <h2 class="heading-2">Gain skills and knowledge to level up your career and creativity.</h2>
+      <a href="#" class="button button--primary">Start Here</a>
+    </div>
+    </section>
+    <!-- Information Section -->
+    <section class="information">
+        <div class="information__image">
+            <img src="./resources/images/information-main.jpg" alt="Student reading a book">
+        </div>
+
+        <div class="information__content">
+            <h3 class="heading-3 mb-sm">It doesn't hurt to keep practicing</h3>
+            <p class="information__quote">
+                "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
+                voluptatibus in amet cum, dolor corporis nihil eum eos optio, quam
+                facere reprehenderit iste quis maxime esse maiores veritatis
+                molestias tenetur."
+            </p>
+            <p class="information__author">
+                - Emanuel, Sr Strategist at Hiring.com
+            </p>
+        </div>
+    </section>
+
+    
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <p class="footer__text">&copy; 2025 Colmar Academy. All rights reserved.</p>
+    <ul class="footer__list">
+      <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
+      <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
+    </ul>
+  </footer>
+
 </body>
 </html>

@@ -1,317 +1,254 @@
-/* --------------------------------------
-   Universal Styles
------------------------------------------ */
-*{
-    box-sizing: border-box;
-}
-
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-html {
-  font-size: 16px;
-  font-family: "Roboto", sans-serif;
-}
-
-body {
-  background-color: #f0f0f0;
-  color: #333;
-  -webkit-font-smoothing: antialiased;
-}
-
-h1, h2, h3, p, a {
-  font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 2rem 1rem;
-  line-height: 1.3;
-}
-
-h2 {
-  font-size: 2rem;
-  font-weight: 500;
-  margin: 0 1rem;
-  line-height: 1.4;
-}
-
-h3 {
-  font-size: 1.25rem;
-  font-weight: 700;
-  margin: 0 1rem;
-  opacity: 0.85;
-  line-height: 1.4;
-}
-
-p {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #666;
-  line-height: 1.6;
-  margin: 0.5rem 1rem;
-}
-
-/* --------------------------------------
-   Header Section
------------------------------------------ */
-header {
-  width: 100%;
-  max-height: 4rem;
-  background-color: #ffffff;
-  border-bottom: 2px solid lightgray;
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  margin: 0 auto;
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-
-ul.HeaderIcons {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 4rem;
-  width: 100%;
-}
-
-header nav .icon {
-  width: 2rem;
-  height: auto;
-  display: block;
-}
-
-.icon:hover {
-  opacity: 0.6;
-  transition: opacity 0.3s ease-in-out 0.3s;
-}
-
-/* --------------------------------------
-   StartHere Section
------------------------------------------ */
-.StartHere {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: lightgray;
-  padding-bottom: 1.5rem;
-  margin: 4rem 0 1rem 0;
-}
-
-.StartHere .content {
-  display: flex;
-  flex-direction: column;
-  width: 95%;
-  justify-content: center;
-}
-
-.StartHere .button {
-  background-color: gray;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  border-radius: 2rem;
-  margin: 1.5rem 1rem 0;
-  box-shadow: 2px 2px 5px #666;
-}
-
-.StartHere .content .button p {
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  margin: 0;
-  color: white;
-}
-
-.StartHere .button:hover {
-  background-color: #5372ff;
-  transition: background-color 400ms ease-in-out;
-  cursor: pointer;
-}
-
-.StartHere .button a {
-  text-decoration: none;
-  color: white;
-}
-
-/* --------------------------------------
-   Banner Section
------------------------------------------ */
-div.Banner {
-  width: 100%;
-  height: auto;
-}
-
-div.Banner img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* --------------------------------------
-   Hero Section
------------------------------------------ */
-.Hero {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: #f0f0f0;
-  border-bottom: 1px solid lightgray;
-}
-
-.Hero article {
-  max-width: 50rem;
-  margin: 0 auto;
-  padding: 0 1rem;
-  text-align: left;
+/* ========== CSS Reset & Base ========== */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
-.Hero h2 {
-  font-size: 1.25rem;
-  font-weight: 700;
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
   color: #333;
-  line-height: 1.3;
-  margin: 2rem 1rem 0.25rem;
+  line-height: 1.6;
 }
 
-.Hero p {
-  font-size: 1rem;
-  font-weight: 400;
-  color: #666;
-  line-height: 1.4;
-  margin: 0 1rem 0.5rem;
-}
-
-.Hero a {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #377dff;
-  text-decoration: none;
-  line-height: 1.5;
-  margin: 0 1rem 1.5rem;
-  display: inline-block;
-}
-
-.Hero a:hover {
-  color: #23527c;
-  text-decoration: underline;
-  transition: color 400ms ease-in-out;
-}
-
-.Hero article img {
-  width: 100%;
+img {
+  max-width: 100%;
   height: auto;
   display: block;
 }
 
-/* --------------------------------------
-   Learning Section
------------------------------------------ */
-.Learning {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: .5rem;
-    padding: 1rem 1rem 2rem 1rem;
-    border-bottom: 1px solid lightgray;
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-.Learning h1 {
-  text-align: center;
+/* ========== Typography ========== */
+.heading-1 {
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
-.Learning .item {
-  background-color: lightgray;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  text-align: left;
-  box-shadow: 2px 2px 5px #666;
+
+.heading-2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
 }
 
-.Learning .item a {
-  text-decoration: none;
-  color: #333;
+.heading-3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.heading-4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+/* ========== Buttons ========== */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 4px;
   font-weight: bold;
-  margin: 1rem 1rem 1rem 1.5rem;
+  text-align: center;
+  transition: background-color 0.3s ease;
 }
 
-.Learning .item:hover {
-  background-color: #5372ff;
-  transition: background-color 400ms ease-in-out;
-  cursor: pointer;
-}  
-.Learning .item:hover a {
-  color: white;
-  transition: color 400ms ease-in-out;
+.btn--primary {
+  background-color: #4a66f0;
+  color: #fff;
 }
 
-/* --------------------------------------
-   Thesis Section
------------------------------------------ */
-.Thesis {
+.btn--primary:hover {
+  background-color: #314ad6;
+}
+
+/* ========== Utility ========== */
+.center-text {
+  text-align: center;
+}
+
+.mb-sm {
+  margin-bottom: 1rem;
+}
+
+.mb-md {
+  margin-bottom: 2rem;
+}
+
+.mb-lg {
+  margin-bottom: 3rem;
+}
+
+.mb-hg {
+  margin-bottom: 4rem;
+}
+
+/*--------------------------------------- Navigation -----------------------------------------*/
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav--desktop {
+  display: flex;
+}
+
+.nav__logo-link {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  text-decoration: none;
+}
+
+.nav__logo {
+  height: 2rem;
+}
+
+.nav__name--bold {
+  font-weight: 700;
+  color: #333;
+  margin-left: 0.25rem;
+}
+
+.nav__name--thin {
+  font-weight: 300;
+  color: #555;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin : 0;
+  padding: 0;
+}
+
+.nav__link {
+  font-weight: 500;
+  color: #444;
+  transition: color 0.2s ease;
+}
+
+.nav__link:hover {
+  color: #4a66f0;
+}
+
+/* Mobile Navigation */
+
+.nav--mobile {
+  display: none;
+}
+.nav__mobile-icon {
+  height: 1.75rem;
+  margin: 0 0.5rem;
+}
+
+/* -------------------------------------- Hero Section ----------------------------------------- */
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.hero__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.hero__content {
+  max-width: clamp(320px, 80%, 700px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* -------------------------------------- Information Section ----------------------------------------- */
+.information {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.information__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.information__content {
+  max-width: clamp(320px, 80%, 700px);
+  margin: 0 auto;
+  text-align: center;
+}
+
+.information__quote {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.information__author {
+  font-size: 0.875rem;
+  color: #777;
+  font-style: italic;
+}
+
+
+/* ========== Footer ========== */
+.footer {
+  background-color: #f1f1f1;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 2rem 0;
-  background-color: #f0f0f0;
-}
-.Thesis h2 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 1rem;
-}
-.Thesis .VidContainer {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-.Thesis video {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-
+  gap: 1rem;
+  border-top: 1px solid #ddd;
+  margin-top: 4rem;
 }
 
-/* --------------------------------------
-   Footer Section 
------------------------------------------ */
-footer {
-  width: 100%;
-  background-color: #ffffff;
-  border-top: 1px solid lightgray;
-  padding: 1rem;
-  text-align: left;
-}
-footer p {
-  margin: 1rem 0rem 1rem 0rem;
-  font-size: 0.75rem;
+.footer__text {
+  font-size: 0.9rem;
   color: #666;
-  padding-left: 1rem;
+  text-align: center;
 }
 
-/* --------------------------------------
-   Media Queries
------------------------------------------ */
-@media only screen and (max-width: 780px) {
-  .Hero .item1,
-  .item2-desktop,
-  .item3-desktop,
-  .item4-desktop {
-    display: none;
-  }
+.footer__list {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__link {
+  font-weight: 500;
+  color: #444;
+  transition: color 0.2s ease;
+}
+
+.footer__link:hover {
+  color: #4a66f0;
 }
