@@ -1,6 +1,10 @@
 /* --------------------------------------
    Universal Styles
 ----------------------------------------- */
+*{
+    box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
