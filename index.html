@@ -18,8 +18,8 @@
   <nav class="nav nav--desktop">
     <a href="#" class="nav__logo-link">
       <img src="./resources/images/ic-logo.svg" alt="Colmar logo" class="nav__logo" />
-      <span class="nav__name nav__name--bold">Colmar</span>
-      <span class="nav__name nav__name--thin">Academy</span>
+      <span class="nav__name nav__name--bold">COLMAR</span>
+      <span class="nav__name nav__name--thin">ACADEMY</span>
     </a>
     <ul class="nav__list">
       <li class="nav__item"><a href="#" class="nav__link">On campus</a></li>
@@ -40,14 +40,12 @@
   <!-- Hero Section -->
   <main>
     <section class="hero">
-        <div class="hero__image"></div>
-          <img src="./resources/images/banner.jpg" alt="Students studying">
-    </div>
+        <div class="hero__image"><img src="./resources/images/banner.jpg" alt="Students studying"></div>
 
     <div class="hero__content">
-      <h1 class="heading-1">Learn something new every day</h1>
+      <h1 class="heading-1">Learn something new everyday</h1>
       <h2 class="heading-2">Gain skills and knowledge to level up your career and creativity.</h2>
-      <a href="#" class="button button--primary">Start Here</a>
+      <a href="#" class="btn btn--primary">Start Here</a>
     </div>
     </section>
     <!-- Information Section -->
@@ -57,6 +55,7 @@
         </div>
 
         <div class="information__content">
+          <div class="wrapper">
             <h3 class="heading-3 mb-sm">It doesn't hurt to keep practicing</h3>
             <p class="information__quote">
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
@@ -67,11 +66,12 @@
             <p class="information__author">
                 - Emanuel, Sr Strategist at Hiring.com
             </p>
+          </div>
             <div class="information__cards">
                 <div class="info-card">
                     <picture>
-                        <source src="./resources/images/information-orientation-mobile.jpg" media="(max-width: 768px)">
-                        <img src="./resources/images/information-orientation.jpg" alt="Srudents on campus" class="info-card__img">
+                        <source srcset="./resources/images/information-orientation-mobile.jpg" media="(max-width: 768px)">
+                        <img src="./resources/images/information-orientation.jpg" alt="Students on campus" class="info-card__img">
                     </picture>
                     <div class="info-card__content">
                         <h4 class="heading-4">Orientation Date</h4>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="info-card">
                     <picture>
-                        <source src="./resources/images/information-campus-mobile.jpg" media="(max-width: 768px)">
+                        <source srcset="./resources/images/information-campus-mobile.jpg" media="(max-width: 768px)">
                         <img src="./resources/images/information-campus.jpg" alt="Campus interior" class="info-card__img">
                     </picture>
                     <div class="info-card__content">
@@ -92,7 +92,7 @@
                 </div>
                 <div class="info-card">
                     <picture>
-                        <source src="./resources/images/information-guest-lecture-mobile.jpg" media="(max-width: 768px)">
+                        <source srcset="./resources/images/information-guest-lecture-mobile.jpg" media="(max-width: 768px)">
                         <img src="./resources/images/information-guest-lecture.jpg" alt="Guest lecture" class="info-card__img">
                     </picture>
                     <div class="info-card__content">
@@ -104,16 +104,60 @@
         </div>
     </section>
     <!-- ===== Learning Section ===== -->
-    <section class="learning">
-        <h3 class="heading-3 center-text mb-hg">Start Learning</h3>
+<section class="learning">
+  <h3 class="heading-3 center-text">Start Learning</h3>
 
-        <div class="learning__grid">
-            <a href="#" class="card">
-            </a>
+  <div class="learning__grid">
+    <a href="#" class="card">
+      <img src="./resources/images/course-software.jpg" alt="Software Engineering" class="card__img">
+      <div class="card__content">
+        <h4 class="heading-4">Software Engineering</h4>
+        <p class="card__text">Web Development, Mobile Development, iOT, APIs</p>
+      </div>
+    </a>
 
-        </div>
-        </h3>
-    </section>
+    <a href="#" class="card">
+      <img src="./resources/images/course-computer-art.jpg" alt="Computer Art" class="card__img">
+      <div class="card__content">
+        <h4 class="heading-4">Computer Art</h4>
+        <p class="card__text">Imaging & Design, Motion Graphics, Animation</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <img src="./resources/images/course-design.jpg" alt="Design" class="card__img">
+      <div class="card__content">
+        <h4 class="heading-4">Design</h4>
+        <p class="card__text">UX Design, Research, Visual Design</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <img src="./resources/images/course-data.jpg" alt="Data" class="card__img">
+      <div class="card__content">
+        <h4 class="heading-4">Data</h4>
+        <p class="card__text">Data Science, SQL, Data Visualization</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <img src="./resources/images/course-business.jpg" alt="Business" class="card__img">
+      <div class="card__content">
+        <h4 class="heading-4">Business</h4>
+        <p class="card__text">Product Dev, Biz Dev, Startups</p>
+      </div>
+    </a>
+
+    <a href="#" class="card">
+      <img src="./resources/images/course-marketing.jpg" alt="Marketing" class="card__img">
+      <div class="card__content">
+        <h4 class="heading-4">Marketing</h4>
+        <p class="card__text">Analytics, Content, Mobile Marketing</p>
+      </div>
+    </a>
+  </div>
+</section>
+
     <!-- ===== Thesis Section ===== -->
     <section class="thesis">
       <h3 class="heading-3 center-text mb-hg">Thesis Exhibits</h3>
@@ -124,8 +168,10 @@
                     <source src="./resources/videos/thesis.mp4" type="video/mp4">
                     Your browser does not support this video.
                 </video>
-                <h4 class="heading-4">Reimagine Urban</h4>
-                <p class="thesis_text">Dolor sit amet consectetur adipisicing elit. Velit libero eligendi consectetur, dolorum amet harum molestiae voluptatibus.</p>
+                <div class="video__text">
+                    <h4 class="heading-4">Reimagine Urban</h4>
+                    <p class="thesis_text">Dolor sit amet consectetur adipisicing elit. Velit libero eligendi consectetur, dolorum amet harum molestiae voluptatibus.</p>
+                </div>
         </div>
 
     <!-- Exhibit Side -->
@@ -147,12 +193,8 @@
       </div>
     </div>
   </div>
-</section>
-
-
-     </section>
-
-    
+</section> 
+   
   </main>
 
   <!-- ===== Footer ===== -->
