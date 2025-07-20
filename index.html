@@ -18,49 +18,57 @@
 <body class="container">
 
   <!-- ===== Desktop Navigation ===== -->
-  <nav class="nav nav--desktop">
-    <a href="#" class="nav__logo-link">
-      <img src="./resources/images/ic-logo.svg" alt="Colmar logo" class="nav__logo" />
-      <span class="nav__name nav__name--bold">COLMAR</span>
-      <span class="nav__name nav__name--thin">ACADEMY</span>
-    </a>
-    <ul class="nav__list">
-      <li class="nav__item"><a href="#" class="nav__link">On campus</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Online</a></li>
-      <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
-    </ul>
-  </nav>
+  <nav>
+    <div class="nav__logo">
+      <a href="#" class="nav__logo--link">
+        <img src="./resources/images/ic-logo.svg" alt="Colmar logo" class="nav__img" />
+        <span class="nav__name nav__name--bold">COLMAR</span>
+        <span class="nav__name nav__name--thin">ACADEMY</span>
+      </a>
+    </div>
+    <div class="nav__links">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link">On campus</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Online</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Sign in</a></li>
+      </ul>
+    </div>
+ 
 
   <!-- ===== Mobile Navigation ===== -->
-  <nav class="nav nav--mobile">
-    <a href="#" class="nav__link"><img src="./resources/images/ic-logo.svg" alt="Home" class="nav__mobile-icon" /></a>
-    <a href="#" class="nav__link"><img src="./resources/images/ic-on-campus.svg" alt="On campus" class="nav__mobile-icon" /></a>
-    <a href="#" class="nav__link"><img src="./resources/images/ic-online.svg" alt="Online" class="nav__mobile-icon" /></a>
-    <a href="#" class="nav__link"><img src="./resources/images/ic-login.svg" alt="Login" class="nav__mobile-icon" /></a>
+    <div class="nav--mobile">
+      <ul class="nav__list--mobile">
+        <li><a href="#" class="nav__link--mobile" aria-label="Home"><img src="./resources/images/ic-logo.svg" alt="Home" class="nav__mobile-icon" /></a></li>
+        <li><a href="#" class="nav__link--mobile" aria-label="On Campus"><img src="./resources/images/ic-on-campus.svg" alt="On campus" class="nav__mobile-icon" /></a></li>
+        <li><a href="#" class="nav__link--mobile" aria-label="Online"><img src="./resources/images/ic-online.svg" alt="Online" class="nav__mobile-icon" /></a></li>
+        <li><a href="#" class="nav__link--mobile" aria-label="Login"><img src="./resources/images/ic-login.svg" alt="Login" class="nav__mobile-icon" /></a></li>
+      </ul>
+    </div>
   </nav>
-
   <!-- ===== Main Content Area ===== -->
   <!-- Hero Section -->
   <main>
+  <!--- LHS container-->
     <section class="hero">
-        <div class="hero__image"><img src="./resources/images/banner.jpg" alt="Students studying"></div>
-
-    <div class="hero__content">
-      <h1 class="heading-hero">Learn something new everyday</h1>
-      <h2 class="heading-2-hero">Gain skills and knowledge to level up your career and creativity.</h2>
-      <a href="#" class="btn btn--primary">Start Here</a>
-    </div>
+      <div class="hero--lhs">
+        <img src="./resources/images/banner.jpg" alt="Students studying" class="hero__image">
+      </div>  
+  <!--- RHS container-->
+      <div class="hero--rhs">
+        <h1 class="heading--hero">Learn something new everyday</h1>
+        <h2 class="heading--2--hero">Gain skills and knowledge to level up your career and creativity.</h2>
+        <a href="#" class="btn btn--primary">Start Here</a>
+      </div>
     </section>
     <!-- Information Section -->
     <section class="information">
-      <div class="information__main">
-        <div class="information__image">
+      <div class="information--left">
+        <div class="information--left__image">
             <img src="./resources/images/information-main.jpg" alt="Student reading a book">
         </div>
 
-        <div class="information__content">
-          <div class="wrapper">
-            <h3 class="heading-3 white mb-sm">It doesn't hurt to keep practicing</h3>
+          <div class="information--left__text">
+            <h3 class="heading-3">It doesn't hurt to keep practicing</h3>
             <p class="information__quote">
                 "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo
                 voluptatibus in amet cum, dolor corporis nihil eum eos optio, quam
@@ -71,8 +79,9 @@
                 - Emanuel, Sr Strategist at Hiring.com
             </p>
           </div>
-          </div>
-            <div class="information__cards">
+      </div>    
+            <div class="information--right">
+              <div class="information__cards">
                 <div class="info-card">
                     <picture>
                         <source srcset="./resources/images/information-orientation-mobile.jpg" media="(max-width: 768px)">
@@ -95,17 +104,18 @@
                         <a href="#" class="btn btn--small">Read More</a>
                     </div>
                 </div>
-                <div class="info-card">
+                <div class="info-card highlight">
                     <picture>
                         <source srcset="./resources/images/information-guest-lecture-mobile.jpg" media="(max-width: 768px)">
                         <img src="./resources/images/information-guest-lecture.jpg" alt="Guest lecture" class="info-card__img">
                     </picture>
                     <div class="info-card__content">
-                        <h4 class="heading-4">Guest Lecture</h4>
+                        <h4 class="heading-4 guest">Guest Lecture</h4>
                         <p class="info-card__text">Join a keynote with Oliver Sack about music in medical treatment</p>
                         <a href="#" class="btn btn--small">Read More</a>
-                    </div>
-            </div>
+                    </div>     
+                </div>
+              </div>  
         </div>
     </section>
     <!-- ===== Learning Section ===== -->
@@ -165,19 +175,22 @@
 
     <!-- ===== Thesis Section ===== -->
     <section class="thesis">
-      <h3 class="heading-3-hero center-text mb-hg">Thesis Exhibits</h3>
+      <h3 class="heading-3">Thesis Exhibits</h3>
       <div class="thesis__container">
-            <!-- Video Side -->
-            <div class="thesis__video">
-                <video controls>
+        <!-- Video Side -->
+          <div class="thesis__left">
+              <div class="thesis__video">
+                <video autoplay muted loop>
                     <source src="./resources/videos/thesis.mp4" type="video/mp4">
                     Your browser does not support this video.
                 </video>
+              </div>
                 <div class="video__text">
                     <h4 class="heading-4">Reimagine Urban</h4>
                     <p class="thesis_text">Dolor sit amet consectetur adipisicing elit. Velit libero eligendi consectetur, dolorum amet harum molestiae voluptatibus.</p>
                 </div>
-        </div>
+            </div>
+
 
     <!-- Exhibit Side -->
     <div class="thesis__sidebar">
@@ -204,7 +217,7 @@
 
   <!-- ===== Footer ===== -->
   <footer class="footer">
-    <p class="footer__text">&copy; 2025 Colmar Academy. All rights reserved.</p>
+    <p class="footer__text">&copy; 2025 Colmar Academy. All rights reserved. <br><span>Developed by Matt Baker.</span> </p>
     <ul class="footer__list">
       <li class="footer__item"><a href="#" class="footer__link">Terms</a></li>
       <li class="footer__item"><a href="#" class="footer__link">Privacy</a></li>
